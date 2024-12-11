@@ -9,6 +9,7 @@ def number():
         if s == "хватит":
             break
         masive.append(s)
+number()
 number_of_elements_in_the_array = len(masive)
 #кол-во объектов в масиве
 intermediate_option = random.randint(0,number_of_elements_in_the_array)
