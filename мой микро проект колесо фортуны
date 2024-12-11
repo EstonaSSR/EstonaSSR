@@ -1,0 +1,17 @@
+import random
+global masive
+print()
+masive =[]
+def number():
+    print("введите хватит чтобы закончить")
+    while 1:
+        s = input()
+        if s == "хватит":
+            break
+        masive.append(s)
+number_of_elements_in_the_array = len(masive)
+#кол-во объектов в масиве
+intermediate_option = random.randint(0,number_of_elements_in_the_array)
+#выбираем случайное число от 0 до кол-во объектов в масиве
+option = masive[intermediate_option]
+print(option)
