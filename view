@@ -1,0 +1,57 @@
+from Model import *
+from Viev import *
+# Controller (Контроллер) - управляет логикой и связывает модель с представлением
+def main():
+    while True:
+
+
+        choice = display_menu()
+        numbe_1 = number_1()
+        numbe_2 = number_2()
+
+
+        if choice == "1":
+            get_books = show_books (numbe_1,numbe_2)
+            print(get_books)
+            add_book(get_books)
+
+        elif choice == "2":
+            title = get_book_title(numbe_1,numbe_2)
+            print(title)
+            add_book(title)
+
+        elif choice == "3":
+            book_list = get_book_index(numbe_1,numbe_2)
+            print(book_list)
+            add_book(book_list)
+
+        elif choice == "4":
+            book_glist = get_book(numbe_1,numbe_2)
+            print(book_glist)
+            add_book(book_glist)
+
+
+        elif choice == "0":
+            show_message("Пока!")
+            break
+        else:
+            show_message("Неверный выбор, попробуй снова")
+
+
+
+
+main()
+
+# # Запуск программы
+# if __name__ == "__main__":
+#     main()
+
+
+
+
+
+
+
+
+
+
