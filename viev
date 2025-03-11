@@ -1,0 +1,34 @@
+# View (Представление) - отвечает за отображение и ввод данных
+def number_1():
+    number_1 = int(input("введите первое число: "))
+    return number_1
+def number_2():
+    number_2 = int(input("введите первое число: "))
+    return number_2
+
+def display_menu():
+    print("\nВыбери действие: 1 +, 2 -, 3 *, 4 /, 0 exit")
+    choice = input("Введи номер действия: ")
+
+    return choice
+
+def show_books(number_1,number_2):
+    num = number_2 + number_1
+    return num
+
+
+def get_book_title(number_1,number_2):
+    num = number_1 - number_2
+    return num
+
+def get_book_index(number_1,number_2):
+    num = number_2 * number_1
+    return num
+
+
+def get_book(number_1,number_2):
+    num = number_1 // number_2
+    return num
+
+def show_message(message):
+    print(message)
