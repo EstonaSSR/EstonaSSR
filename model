@@ -1,0 +1,13 @@
+
+# Model (Модель) - отвечает за данные и логику работы с ними
+books = ["результат"]
+
+def add_book(title):
+    books.append(title)
+
+def remove_book(index):
+    if 0 <= index < len(books):
+        books.pop(index)
+
+def get_books():
+    return books
